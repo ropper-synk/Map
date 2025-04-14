@@ -39,11 +39,11 @@ export default function Company() {
             <div className="founders-container">
               <div className="founder-profile">
                 <Image 
-                  src="/CEO.jpeg" 
-                  alt="Founder 1" 
+                  src="/DP.jpg" 
+                  alt="Mr. Sabar Shaikh" 
                   className="founder-image"
-                  width={5000}
-                  height={50}
+                  width={200}
+                  height={200}
                 />
                 <div className="founder-content">
                   <h3 className="founder-name">Mr.Sabar Shaikh</h3>
@@ -56,16 +56,16 @@ export default function Company() {
 
               <div className="founder-profile">
                 <Image 
-                  src="/CEO.jpeg" 
-                  alt="Founder 2" 
+                  src="/Sahil.jpg" 
+                  alt="Mr. Shail Shaikh" 
                   className="founder-image"
                   width={200}
                   height={200}
                 />
                 <div className="founder-content">
-                  <h3 className="founder-name">Mr.Sahil Shaikh</h3>
+                  <h3 className="founder-name">Mr. Shail Shaikh</h3>
                   <p>
-                  Mr. Sahil Shaikh is a graduate with a B.E. in Mechanical Engineering and possesses a 
+                  Mr. Shail Shaikh is a graduate with a B.E. in Mechanical Engineering and possesses a 
                   strong technical background. In addition to his academic qualifications, he has earned certifications in
                    Food & Beverage Management, HACCP Certification, and Culinary Arts Certificate Courses,
                    showcasing his versatile skill set and commitment to excellence in both technical and food-related fields.

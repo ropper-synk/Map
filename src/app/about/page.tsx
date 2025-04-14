@@ -18,7 +18,6 @@ export default function AboutUs() {
       <div className="slider-container">
         <ImageSlider images={sliderImages} interval={6000} />
       </div>
-      
       <div className="menu">
         <ul>
           <li className="link">
@@ -73,11 +72,13 @@ export default function AboutUs() {
             mediaAlt={["Maggic Pot Technology", "Maggic Pot Innovation"]}
             header=" Endorsed by Visionaries"
             subhead="Sharadchandra Govindrao Pawar"
-            description={`Introducing the revolutionary Magic Pot, a groundbreaking innovation in self-heating food technology. This state-of-the-art solution combines cutting-edge engineering with user-friendly design to deliver hot, delicious meals instantly, anywhere, anytime.
-
-Our patented self-heating technology ensures consistent temperature control and optimal cooking conditions, making it perfect for both urban settings and rural areas where traditional cooking methods may be challenging.
-
-As endorsed by Shri Hon. Sharad Pawar, "This innovation has the potential to transform everyday life, especially in rural settings and for those constantly on the move." The Magic Pot represents a significant step forward in making quality, hot meals accessible to everyone, everywhere.`}
+            description={`Introducing the revolutionary Magic Pot, a groundbreaking innovation in self-heating food technology. 
+                          This state-of-the-art solution combines cutting-edge engineering with user-friendly design to deliver hot, delicious 
+                          meals instantly, anywhere, anytime.Our patented self-heating technology ensures consistent temperature control and optimal 
+                          cooking conditions, making it perfect for both urban settings and rural areas where traditional cooking methods may be challenging.
+                          As endorsed by Shri Hon. Sharad Pawar, "This innovation has the potential to transform everyday life, especially in rural settings 
+                          and for those constantly on the move." The Magic Pot represents a significant step forward in making quality, hot meals accessible to everyone,
+                          everywhere.`}
             primaryButtonText="Learn More"
             primaryButtonIcon="information-circle"
             secondaryButtonText="Watch Demo"
