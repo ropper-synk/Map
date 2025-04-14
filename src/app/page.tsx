@@ -65,14 +65,7 @@ export default function Home() {
             </Link>
           </li>
          
-          <li className="link">
-            <Link href="/videos" className="link-content">
-              <span className="link-icon">
-                <IonIcon name="videocam-outline" />
-              </span>
-              <span className="link-title">Videos</span>
-            </Link>
-          </li>
+        
           <li className="link">
             <Link href="/payment" className="link-content">
               <span className="link-icon">

@@ -1001,7 +1001,7 @@ ion-icon {
   z-index: 1;
   max-width: 800px;
   margin: 0 auto;
-  padding: 120px 20px;
+  padding: 120px 20px 80px;
   color: white;
   text-align: center;
 }
@@ -1036,12 +1036,30 @@ ion-icon {
   animation: titleFloat 3s ease-in-out infinite;
 }
 
+.about-card-section {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
 .about-description {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 0;
   padding: 0 1rem;
+  text-align: justify;
 }
 
 .about-description p {
@@ -1050,6 +1068,8 @@ ion-icon {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 0.6s ease-out forwards;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .about-description p:nth-child(1) { animation-delay: 0.2s; }
@@ -1783,17 +1803,9 @@ ion-icon {
   font-size: 0.95rem;
 }
 
-.about-card-section {
-  margin-top: 3rem;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.about-card-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .about-card-section .modern-card {
@@ -1801,12 +1813,22 @@ ion-icon {
   width: 100%;
   margin: 0 auto;
   animation: fadeIn 0.5s ease-out forwards;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 768px) {
   .about-card-section {
     padding: 1rem;
     margin-top: 2rem;
+  }
+
+  .about-card-section .modern-card {
+    padding: 1.5rem;
   }
 }
 

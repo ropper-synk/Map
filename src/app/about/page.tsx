@@ -2,6 +2,7 @@ import ImageSlider from '../../components/ImageSlider';
 import IonIcon from '../../components/IonIcon';
 import Link from 'next/link';
 import ModernCard from '../../components/ModernCard';
+import Image from 'next/image';
 
 const sliderImages = [
   '/Back  (1).jpg',
@@ -53,14 +54,6 @@ export default function AboutUs() {
             </Link>
           </li>
           <li className="link">
-            <Link href="/videos" className="link-content">
-              <span className="link-icon">
-                <IonIcon name="videocam-outline" />
-              </span>
-              <span className="link-title">Videos</span>
-            </Link>
-          </li>
-          <li className="link">
             <Link href="/payment" className="link-content">
               <span className="link-icon">
                 <IonIcon name="cart-outline" />
@@ -74,6 +67,24 @@ export default function AboutUs() {
       <div className="about-content">
         <h1 className="about-title">About Maggic Pot</h1>
         
+        <div className="about-card-section">
+          <ModernCard
+            mediaSrc={["/Image.jpg", "/Image2.jpg"]}
+            mediaAlt={["Maggic Pot Technology", "Maggic Pot Innovation"]}
+            header=" Endorsed by Visionaries"
+            subhead="Sharadchandra Govindrao Pawar"
+            description={`Introducing the revolutionary Magic Pot, a groundbreaking innovation in self-heating food technology. This state-of-the-art solution combines cutting-edge engineering with user-friendly design to deliver hot, delicious meals instantly, anywhere, anytime.
+
+Our patented self-heating technology ensures consistent temperature control and optimal cooking conditions, making it perfect for both urban settings and rural areas where traditional cooking methods may be challenging.
+
+As endorsed by Shri Hon. Sharad Pawar, "This innovation has the potential to transform everyday life, especially in rural settings and for those constantly on the move." The Magic Pot represents a significant step forward in making quality, hot meals accessible to everyone, everywhere.`}
+            primaryButtonText="Learn More"
+            primaryButtonIcon="information-circle"
+            secondaryButtonText="Watch Demo"
+            secondaryButtonIcon="play-circle"
+          />
+        </div>
+
         <div className="about-description">
           <p>
             Welcome to Maggic Pot, where innovation meets convenience in the world of self-heating food technology.
